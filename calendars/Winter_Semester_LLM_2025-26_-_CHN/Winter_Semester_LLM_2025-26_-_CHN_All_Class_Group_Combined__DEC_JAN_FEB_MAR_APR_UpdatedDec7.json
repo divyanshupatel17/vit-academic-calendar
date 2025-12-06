@@ -1,9 +1,196 @@
 {
+  "classGroup": "All Class Group (Combined)",
   "lastUpdated": "December 7, 2025 at 03:51:17 AM",
   "lastUpdatedISO": "2025-12-06T22:21:17.290Z",
-  "semester": "Winter Semester LLM 2025-26 - CHN",
-  "classGroup": "All Class Group (Combined)",
   "months": {
+    "APR-2026": {
+      "date": "01-APR-2026",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Good Friday",
+                "text": "No Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Tuesday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Tamil New Year's Day/Dr. B. R. Ambedhakr Birthday",
+                "text": "Holiday - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Last Instructional Day / Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          }
+        ],
+        "month": "APRIL 2026"
+      }
+    },
     "DEC-2025": {
       "date": "01-DEC-2025",
       "events": {
@@ -270,6 +457,244 @@
           }
         ],
         "month": "DECEMBER 2025"
+      }
+    },
+    "FEB-2026": {
+      "date": "01-FEB-2026",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "ThaiPoosam",
+                "text": "Holiday - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Course Withdraw option / Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              }
+            ]
+          }
+        ],
+        "month": "FEBRUARY 2026"
       }
     },
     "JAN-2026": {
@@ -570,244 +995,6 @@
         "month": "JANUARY 2026"
       }
     },
-    "FEB-2026": {
-      "date": "01-FEB-2026",
-      "events": {
-        "days": [
-          {
-            "date": 1,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "ThaiPoosam",
-                "text": "Holiday - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 2,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 3,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 4,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 5,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 6,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 7,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Instructional Day / Thursday Day Order",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 9,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 10,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 11,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 12,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 13,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 16,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day / Course Withdraw option",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 17,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day / Course Withdraw option",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 18,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Course Withdraw option / Vibrance 2026",
-                "text": "No Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 19,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Vibrance 2026",
-                "text": "No Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 20,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Vibrance 2026",
-                "text": "No Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 21,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Vibrance 2026",
-                "text": "No Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 23,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 24,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 25,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 26,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 27,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          }
-        ],
-        "month": "FEBRUARY 2026"
-      }
-    },
     "MAR-2026": {
       "date": "01-MAR-2026",
       "events": {
@@ -1055,194 +1242,7 @@
         ],
         "month": "MARCH 2026"
       }
-    },
-    "APR-2026": {
-      "date": "01-APR-2026",
-      "events": {
-        "days": [
-          {
-            "date": 1,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 2,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 3,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Good Friday",
-                "text": "No Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 6,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 7,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 8,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 9,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 10,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 11,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Instructional Day / Tuesday Day Order",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 13,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 14,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Tamil New Year's Day/Dr. B. R. Ambedhakr Birthday",
-                "text": "Holiday - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 15,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 16,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 17,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 20,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 21,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 22,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          },
-          {
-            "date": 23,
-            "events": [
-              {
-                "category": "Flexible",
-                "description": "Last Instructional Day / Working Day",
-                "text": "Instructional Day - General (Flexible)"
-              }
-            ]
-          }
-        ],
-        "month": "APRIL 2026"
-      }
     }
-  }
+  },
+  "semester": "Winter Semester LLM 2025-26 - CHN"
 }
