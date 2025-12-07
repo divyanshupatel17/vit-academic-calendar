@@ -114,28 +114,33 @@ jobs:
               labels: ['needs-review', 'syntax-error']
             });
             
+            const errorMsg = `${{ steps.validate.outputs.error_msg }}`;
+            const body = `**Step 4: Validation Failed - Syntax Errors Detected**
+
+The following issues were found:
+${errorMsg}
+
+**Required JSON Structure:**
+\`\`\`json
+{
+  "lastUpdated": "December 7, 2025 at 10:10:34 AM",
+  "lastUpdatedISO": "2025-12-07T04:40:34.625Z",
+  "semester": "Winter Semester 2025-26 - CHN",
+  "classGroup": "General (Semester)",
+  "months": { ... }
+}
+\`\`\`
+
+**Action Required:** Please fix the errors and update the PR.
+**Status:** PR is on hold for manual review.`;
+            
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '**Step 4: Validation Failed - Syntax Errors Detected**\n\n' +
-                    'The following issues were found:\n' +
-                    '${{ steps.validate.outputs.error_msg }}\n\n' +
-                    '**Required JSON Structure:**\n' +
-                    '```json\n' +
-                    '{\n' +
-                    '  "lastUpdated": "December 7, 2025 at 10:10:34 AM",\n' +
-                    '  "lastUpdatedISO": "2025-12-07T04:40:34.625Z",\n' +
-                    '  "semester": "Winter Semester 2025-26 - CHN",\n' +
-                    '  "classGroup": "General (Semester)",\n' +
-                    '  "months": { ... }\n' +
-                    '}\n' +
-                    '```\n\n' +
-                    '**Action Required:** Please fix the errors and update the PR.\n' +
-                    '**Status:** PR is on hold for manual review.'
+              body: body
             });
             
-            // Exit without failing the workflow
             process.exit(0);
             
       - name: Step 5 - Compare with existing files
@@ -233,19 +238,24 @@ jobs:
               labels: ['no-changes', 'duplicate']
             });
             
+            const body = `**Step 6: No Changes Detected**
+
+The calendar data is identical to the existing version.
+Only timestamps differ, which is expected.
+
+**Comparison:**
+- Semester: Same
+- Class Group: Same
+- Months: Same
+- Events: Same
+
+**Action:** Closing PR automatically.`;
+            
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '**Step 6: No Changes Detected**\n\n' +
-                    'The calendar data is identical to the existing version.\n' +
-                    'Only timestamps differ, which is expected.\n\n' +
-                    '**Comparison:**\n' +
-                    '- Semester: Same\n' +
-                    '- Class Group: Same\n' +
-                    '- Months: Same\n' +
-                    '- Events: Same\n\n' +
-                    '**Action:** Closing PR automatically.'
+              body: body
             });
             
             await github.rest.pulls.update({
@@ -263,24 +273,25 @@ jobs:
             const isNew = '${{ steps.compare.outputs.is_new }}' === 'true';
             const changes = `${{ steps.compare.outputs.changes_summary }}`;
             
-            let commentBody = '**Step 7: Validation Passed**\n\n';
+            let commentBody = `**Step 7: Validation Passed**\n\n`;
             
             if (isNew) {
-              commentBody += '**Type:** New Calendar File\n\n';
-              commentBody += '**Details:**\n';
-              commentBody += '- This is a new calendar that will be added to the repository\n';
+              commentBody += `**Type:** New Calendar File\n\n`;
+              commentBody += `**Details:**\n`;
+              commentBody += `- This is a new calendar that will be added to the repository\n`;
             } else {
-              commentBody += '**Type:** Calendar Update\n\n';
-              commentBody += '**Changes Detected:**\n';
-              commentBody += changes.split('\n').map(line => line ? `- ${line}` : '').join('\n');
+              commentBody += `**Type:** Calendar Update\n\n`;
+              commentBody += `**Changes Detected:**\n`;
+              const changeLines = changes.split('\n').filter(line => line.trim()).map(line => `- ${line}`).join('\n');
+              commentBody += changeLines;
             }
             
-            commentBody += '\n\n**Validation Results:**\n';
-            commentBody += '- JSON syntax: Valid\n';
-            commentBody += '- Required fields: Present\n';
-            commentBody += '- Field order: Correct\n';
-            commentBody += '- Month order: Chronological\n';
-            commentBody += '\n**Status:** Approved for merge';
+            commentBody += `\n\n**Validation Results:**\n`;
+            commentBody += `- JSON syntax: Valid\n`;
+            commentBody += `- Required fields: Present\n`;
+            commentBody += `- Field order: Correct\n`;
+            commentBody += `- Month order: Chronological\n`;
+            commentBody += `\n**Status:** Approved for merge`;
             
             await github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -289,7 +300,6 @@ jobs:
               body: commentBody
             });
             
-            // Add appropriate label
             const label = isNew ? 'new-calendar' : 'calendar-update';
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
@@ -311,6 +321,7 @@ jobs:
           script: |
             const isNew = '${{ steps.compare.outputs.is_new }}' === 'true';
             const prTitle = context.payload.pull_request.title;
+            const changes = `${{ steps.compare.outputs.changes_summary }}`;
             
             let commitTitle, commitMessage;
             
@@ -318,7 +329,6 @@ jobs:
               commitTitle = `Add new calendar: ${prTitle}`;
               commitMessage = `New calendar file added\n\nPR: #${context.issue.number}\nType: New Calendar\nAuto-merged after validation`;
             } else {
-              const changes = `${{ steps.compare.outputs.changes_summary }}`;
               commitTitle = `Update calendar: ${prTitle}`;
               commitMessage = `Calendar updated\n\nPR: #${context.issue.number}\nType: Update\nChanges:\n${changes}\n\nAuto-merged after validation`;
             }
@@ -333,22 +343,30 @@ jobs:
                 commit_message: commitMessage
               });
               
+              const successBody = `**Step 9: Merged Successfully**
+
+Calendar has been updated and merged into main branch.
+
+Thank you for contributing to the VIT Academic Calendar!`;
+              
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: '**Step 9: Merged Successfully**\n\n' +
-                      'Calendar has been updated and merged into main branch.\n\n' +
-                      'Thank you for contributing to the VIT Academic Calendar!'
+                body: successBody
               });
             } catch (error) {
+              const errorBody = `**Step 9: Merge Failed**
+
+Error: ${error.message}
+
+Please merge manually or contact the repository maintainer.`;
+              
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                body: '**Step 9: Merge Failed**\n\n' +
-                      `Error: ${error.message}\n\n` +
-                      'Please merge manually or contact the repository maintainer.'
+                body: errorBody
               });
               
               await github.rest.issues.addLabels({
