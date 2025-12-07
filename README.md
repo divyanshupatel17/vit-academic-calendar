@@ -1,36 +1,27 @@
 # VIT Academic Calendar
 
-Community-maintained academic calendar data for VIT (Vellore Institute of Technology), automatically extracted from VTOP using the VTOP Calendar Extension.
+Community-maintained academic calendar data for VIT (Vellore Institute of Technology), automatically extracted from VTOP.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-vit-academic-calendar/
-├── README.md
-└── calendars/
-    ├── Winter_Semester_2025-26_-_CHN/
-    │   ├── Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json
-    │   ├── Winter_Semester_2025-26_-_CHN_General_Flexible__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json
-    │   └── ...
-    ├── Fall_Semester_2025-26_-_CHN/
-    │   └── ...
-    └── Summer_Semester_2024-25_-_CHN/
-        └── ...
+calendars/
+├── Winter_Semester_2025-26_-_CHN/
+│   ├── [Calendar_Files].json
+├── Fall_Semester_2025-26_-_CHN/
+│   └── [Calendar_Files].json
+└── Summer_Semester_2024-25_-_CHN/
+    └── [Calendar_Files].json
 ```
 
-### Folder Organization
-- Each semester has its own folder
-- Folder name format: `{Semester_Name}`
-- Files keep their original names with update dates
-
-## 📄 JSON File Format
+## JSON File Format
 
 Each calendar file contains structured event data:
 
 ```json
 {
-  "lastUpdated": "December 7, 2025, 02:30:45 PM",
-  "lastUpdatedISO": "2025-12-07T09:00:45.123Z",
+  "lastUpdated": "December 7, 2025 at 10:10:34 AM",
+  "lastUpdatedISO": "2025-12-07T04:40:34.625Z",
   "semester": "Winter Semester 2025-26 - CHN",
   "classGroup": "General (Semester)",
   "months": {
@@ -45,135 +36,40 @@ Each calendar file contains structured event data:
                 "text": "Instructional Day",
                 "category": "General",
                 "description": "FID/ Working Day / Add & Drop"
-              },
-              {
-                "text": "Holiday",
-                "category": "General",
-                "description": "Christmas"
               }
             ]
           }
         ]
-      }
-    },
-    "JAN-2026": {
-      "date": "01-JAN-2026",
-      "events": {
-        "days": []
       }
     }
   }
 }
 ```
 
-### Field Descriptions
+## Field Descriptions
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `lastUpdated` | string | Human-readable timestamp of last update |
-| `lastUpdatedISO` | string | ISO 8601 timestamp for programmatic use |
-| `semester` | string | Full semester name (e.g., "Winter Semester 2025-26 - CHN") |
-| `classGroup` | string | Class group name (e.g., "General (Semester)", "General (Flexible)") |
-| `months` | object | Calendar data organized by month |
-| `months.{MONTH}` | object | Month-specific data |
-| `months.{MONTH}.date` | string | Month start date |
-| `months.{MONTH}.events` | object | Events container |
-| `months.{MONTH}.events.days` | array | Array of days with events |
-| `days[].date` | number | Day of the month (1-31) |
-| `days[].events` | array | Array of events for that day |
-| `events[].text` | string | Event type (e.g., "Instructional Day", "Holiday") |
-| `events[].category` | string | Event category (e.g., "General", "CAT", "Exam") |
-| `events[].description` | string | Detailed event description |
+| `lastUpdated` | string | Human-readable timestamp |
+| `lastUpdatedISO` | string | ISO 8601 timestamp |
+| `semester` | string | Full semester name |
+| `classGroup` | string | Class group name |
+| `months` | object | Calendar data by month |
 
-## 🤝 How to Contribute
+## How to Contribute
 
-### Prerequisites
-- Install the [VTOP Calendar Extension](link-to-extension)
-- Have access to VTOP (VIT student/faculty)
+1. Install the VTOP Calendar Extension
+2. Extract calendar data from VTOP
+3. Click "GitHub PR" to create a pull request
+4. Wait for automated analysis
+5. Repository maintainer will review and merge
 
-### Method 1: Web-Based PR (Recommended)
-
-**No GitHub token needed!**
-
-1. **Extract Calendar Data**
-   - Open VTOP and log in
-   - Open the VTOP Calendar Extension
-   - Select your semester and class groups
-   - Click "Extract Calendar"
-
-2. **Create Pull Request**
-   - Click "GitHub PR" button on the generated file
-   - Select "Web-based PR (Recommended)"
-   - Click "Continue"
-   - The extension will download the JSON file
-
-3. **Follow Instructions**
-   - Fork this repository (if you haven't already)
-   - Navigate to the appropriate semester folder
-   - Upload the downloaded JSON file
-   - Create a pull request
-
-### Method 2: API-Based PR (Advanced)
-
-**Requires GitHub Personal Access Token**
-
-1. **Create GitHub Token**
-   - Go to [GitHub Settings > Tokens](https://github.com/settings/tokens/new?scopes=repo&description=VTOP+Calendar+Extension)
-   - Select scope: **repo** (Full control of private repositories)
-   - Generate and copy the token
-
-2. **Configure Extension**
-   - Click "GitHub PR" button
-   - Select "API-based PR (Advanced)"
-   - Enter your GitHub token
-   - Click "Continue"
-
-3. **Automatic PR Creation**
-   - The extension will automatically:
-     - Check for changes
-     - Create a branch
-     - Upload the file
-     - Create a pull request
-
-## 📋 Pull Request Guidelines
-
-### PR Title Format
-```
-Update: {Semester} - {Class Group}
-```
-or
-```
-Add: {Semester} - {Class Group}
-```
-
-### PR Description Should Include
-- Semester name
-- Class group
-- Last updated timestamp
-- Total event days
-- Months included
-- File location
-
-### Before Submitting
-- ✅ Ensure JSON is valid
-- ✅ Check that semester and class group match the file content
-- ✅ Verify the file is in the correct folder
-- ✅ Make sure the data is up-to-date
-
-## 🔍 Data Validation
-
-All pull requests are automatically validated for:
-- Valid JSON format
-- Required fields present
-- Correct file structure
-- No duplicate entries
-
-## 📊 Using the Data
+## Using the Data
 
 ### JavaScript Example
+
 ```javascript
-// Fetch calendar data
-const response = await fetch('https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json');
+const response = await fetch('https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/calendars/[semester]/[file].json');
 const calendar = await response.json();
 
 // Get all holidays
@@ -184,24 +80,20 @@ Object.values(calendar.months).forEach(month => {
       if (event.text.includes('Holiday')) {
         holidays.push({
           date: day.date,
-          month: month.date,
           description: event.description
         });
       }
     });
   });
 });
-
-console.log('Holidays:', holidays);
 ```
 
 ### Python Example
+
 ```python
 import requests
-import json
 
-# Fetch calendar data
-url = 'https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json'
+url = 'https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/calendars/[semester]/[file].json'
 response = requests.get(url)
 calendar = response.json()
 
@@ -213,26 +105,26 @@ for month_name, month_data in calendar['months'].items():
             if 'Instructional' in event['text']:
                 instructional_days.append({
                     'date': day['date'],
-                    'month': month_name,
-                    'description': event['description']
+                    'month': month_name
                 })
-
-print(f"Total instructional days: {len(instructional_days)}")
 ```
 
-## 🛠️ Troubleshooting
+## Automated Workflows
 
-### "File already exists"
-- The calendar for this semester/class group is already up-to-date
-- Check if there are actual changes before creating a PR
+### PR Analysis
+When you create a pull request, an automated workflow will:
+- Validate JSON structure
+- Check field order
+- Count events by month
+- Compare with existing files
+- Provide detailed analysis report
 
-### "Invalid JSON"
-- Re-extract the calendar from VTOP
-- Ensure the file wasn't manually edited
+### README Update
+When changes are merged to main:
+- README is automatically updated
+- Calendar list is regenerated
+- Timestamps are updated
 
-### "Wrong folder structure"
-- Files should be in `calendars/{Semester_Name}/` folder
-- Keep the original filename with update date
+## License
 
-
-**Last Updated:** December 2025  
+This data is extracted from VTOP and is intended for educational purposes only.
