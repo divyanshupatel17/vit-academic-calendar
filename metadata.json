@@ -1,18 +1,29 @@
 {
-  "lastUpdated": "December 07, 2025 at 04:09:49 PM",
-  "lastUpdatedISO": "2025-12-07T16:09:49.000Z",
+  "lastUpdated": "December 07, 2025 at 04:12:02 PM",
+  "lastUpdatedISO": "2025-12-07T16:12:02.000Z",
   "totalSemesters": 3,
-  "totalCalendars": 7,
+  "totalCalendars": 8,
   "semesters": [
     {
       "semesterFolder": "Fall_Semester_Industry_2025-26_-_CHN",
       "semesterName": "Fall Semester (Industry) 2025-26 - CHN",
-      "classGroupCount": 1,
+      "classGroupCount": 2,
       "classGroups": [
         {
           "classGroup": "All Class Group (Combined)",
           "fileName": "Fall_Semester_Industry_2025-26_-_CHN_All_Class_Group_Combined__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
           "filePath": "calendars/Fall_Semester_Industry_2025-26_-_CHN/Fall_Semester_Industry_2025-26_-_CHN_All_Class_Group_Combined__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:31:10 PM",
+          "lastUpdatedISO": "2025-12-07T16:01:10.674Z",
+          "monthCount": 5,
+          "months": "DEC-2025, JAN-2026, NOV-2025, OCT-2025, SEP-2025",
+          "totalEventDays": 85,
+          "totalEvents": 85
+        },
+        {
+          "classGroup": "General (Flexible)",
+          "fileName": "Fall_Semester_Industry_2025-26_-_CHN_General_Flexible__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
+          "filePath": "calendars/Fall_Semester_Industry_2025-26_-_CHN/Fall_Semester_Industry_2025-26_-_CHN_General_Flexible__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
           "lastUpdated": "December 7, 2025 at 09:31:10 PM",
           "lastUpdatedISO": "2025-12-07T16:01:10.674Z",
           "monthCount": 5,
