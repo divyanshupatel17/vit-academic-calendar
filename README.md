@@ -119,12 +119,6 @@ When you create a pull request, an automated workflow will:
 - Compare with existing files
 - Provide detailed analysis report
 
-### README Update
-When changes are merged to main:
-- README is automatically updated
-- Calendar list is regenerated
-- Timestamps are updated
-
 ## License
 
 This data is extracted from VTOP and is intended for educational purposes only.
