@@ -1,6 +1,5 @@
 # GitHub Actions Workflow for Auto-Reviewing and Merging Calendar PRs
 # File Location: .github/workflows/auto-merge-calendar.yml
-
 name: Auto Review and Merge Calendar PRs
 
 on:
@@ -15,20 +14,20 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-      
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-          
+
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v40
         with:
           files: |
             calendars/**/*.json
-            
+
       - name: Validate JSON files
         id: validate
         run: |
@@ -37,100 +36,47 @@ jobs:
           
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "Checking $file"
-            
-            # Check if file exists
+
             if [ ! -f "$file" ]; then
               echo "Error: File $file not found"
               VALID=false
               continue
             fi
-            
-            # Validate JSON syntax
+
             if ! jq empty "$file" 2>/dev/null; then
               echo "Error: Invalid JSON in $file"
               VALID=false
               continue
             fi
-            
-            # Check required fields
+
             if ! jq -e '.lastUpdated and .lastUpdatedISO and .semester and .classGroup and .months' "$file" > /dev/null; then
-              echo "Error: Missing required fields in $file"
+              echo "Error: Missing fields in $file"
               VALID=false
               continue
             fi
-            
-            # Check if semester and classGroup match folder structure
-            SEMESTER=$(jq -r '.semester' "$file" | sed 's/[^a-zA-Z0-9_-]/_/g' | sed 's/__*/_/g')
-            EXPECTED_FOLDER="calendars/$SEMESTER"
-            ACTUAL_FOLDER=$(dirname "$file")
-            
-            if [ "$ACTUAL_FOLDER" != "$EXPECTED_FOLDER" ]; then
-              echo "Warning: File $file is in wrong folder. Expected: $EXPECTED_FOLDER, Got: $ACTUAL_FOLDER"
-            fi
-            
+
             echo "✓ $file is valid"
           done
-          
-          if [ "$VALID" = true ]; then
-            echo "valid=true" >> $GITHUB_OUTPUT
-            echo "All files are valid!"
-          else
-            echo "valid=false" >> $GITHUB_OUTPUT
-            echo "Some files failed validation"
-            exit 1
-          fi
-          
-      - name: Check for updates (compare with main)
+
+          echo "valid=$VALID" >> $GITHUB_OUTPUT
+          if [ "$VALID" = false ]; then exit 1; fi
+
+      - name: Check for updates
         id: check-updates
         run: |
-          echo "Checking if files have actual updates..."
           HAS_UPDATES=false
-          
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            # Check if file exists in main branch
             if git show origin/main:$file > /dev/null 2>&1; then
-              # File exists, compare content (excluding timestamps)
-              NEW_CONTENT=$(jq 'del(.lastUpdated, .lastUpdatedISO)' "$file")
-              OLD_CONTENT=$(git show origin/main:$file | jq 'del(.lastUpdated, .lastUpdatedISO)')
-              
-              if [ "$NEW_CONTENT" != "$OLD_CONTENT" ]; then
-                echo "✓ $file has actual changes"
-                HAS_UPDATES=true
-              else
-                echo "⚠ $file has no actual changes (only timestamp updated)"
-              fi
+              NEW=$(jq 'del(.lastUpdated,.lastUpdatedISO)' "$file")
+              OLD=$(git show origin/main:$file | jq 'del(.lastUpdated,.lastUpdatedISO)')
+              if [ "$NEW" != "$OLD" ]; then HAS_UPDATES=true; fi
             else
-              # New file
-              echo "✓ $file is a new calendar"
               HAS_UPDATES=true
             fi
           done
-          
           echo "has_updates=$HAS_UPDATES" >> $GITHUB_OUTPUT
-          
-      - name: Auto-approve PR
-        if: steps.validate.outputs.valid == 'true'
-        uses: hmarr/auto-approve-action@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Add success comment
-        if: steps.validate.outputs.valid == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '✅ **Automated Review Complete**\n\n' +
-                    '- JSON validation: Passed\n' +
-                    '- Required fields: Present\n' +
-                    '- File structure: Correct\n\n' +
-                    'This PR has been automatically approved and will be merged shortly.'
-            })
-            
-      - name: Enable auto-merge
+
+      - name: Auto-merge PR
         if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'true'
         uses: actions/github-script@v7
         with:
@@ -139,12 +85,10 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
-              merge_method: 'squash',
-              commit_title: `${context.payload.pull_request.title}`,
-              commit_message: `Automated merge of calendar update\n\nPR #${context.issue.number}`
+              merge_method: 'squash'
             })
-            
-      - name: Add merge comment
+
+      - name: Comment after merge
         if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'true'
         uses: actions/github-script@v7
         with:
@@ -153,12 +97,10 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '🎉 **Merged Successfully!**\n\n' +
-                    'Calendar has been updated and merged into main branch.\n\n' +
-                    'Thank you for contributing to the VIT Academic Calendar!'
+              body: '🎉 Auto-merged successfully!'
             })
-            
-      - name: Add no-changes comment
+
+      - name: Close PR with comment (no actual changes)
         if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'false'
         uses: actions/github-script@v7
         with:
@@ -167,11 +109,8 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '⚠️ **No Actual Changes Detected**\n\n' +
-                    'The calendar data is identical to the existing version (only timestamps differ).\n\n' +
-                    'This PR will be closed automatically.'
+              body: '⚠️ Identical to main (only timestamps changed) — closing PR.'
             })
-            
             await github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
