@@ -1,4 +1,4 @@
-name: Update README and Metadata
+name: Update Metadata
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
     paths:
       - 'calendars/**/*.json'
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight UTC
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-readme-and-metadata:
+  update-metadata:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,28 +26,15 @@ jobs:
         run: |
           echo "Generating metadata.json..."
           
-          cat > metadata.json << 'METADATA_START'
-{
-  "lastUpdated": "$(date -u +"%B %d, %Y at %I:%M:%S %p")",
-  "lastUpdatedISO": "$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")",
-  "totalSemesters": 0,
-  "totalCalendars": 0,
-  "semesters": []
-}
-METADATA_START
-          
-          # Initialize metadata
           TOTAL_SEMESTERS=0
           TOTAL_CALENDARS=0
           SEMESTERS_JSON="[]"
           
-          # Process each semester directory
           for semester_dir in calendars/*/; do
             if [ -d "$semester_dir" ]; then
               SEMESTER_NAME=$(basename "$semester_dir")
               TOTAL_SEMESTERS=$((TOTAL_SEMESTERS + 1))
               
-              # Get semester details from first file
               FIRST_FILE=$(find "$semester_dir" -name "*.json" -type f | head -n 1)
               
               if [ -n "$FIRST_FILE" ]; then
@@ -56,10 +43,8 @@ METADATA_START
                 SEMESTER_FULL_NAME="$SEMESTER_NAME"
               fi
               
-              # Initialize class groups array
               CLASS_GROUPS_JSON="[]"
               
-              # Process each calendar file in this semester
               for file in "$semester_dir"*.json; do
                 if [ -f "$file" ]; then
                   TOTAL_CALENDARS=$((TOTAL_CALENDARS + 1))
@@ -69,11 +54,9 @@ METADATA_START
                   LAST_UPDATED=$(jq -r '.lastUpdated' "$file")
                   LAST_UPDATED_ISO=$(jq -r '.lastUpdatedISO' "$file")
                   
-                  # Count months
                   MONTH_COUNT=$(jq -r '.months | keys | length' "$file")
                   MONTHS_LIST=$(jq -r '.months | keys | join(", ")' "$file")
                   
-                  # Count total event days
                   TOTAL_EVENTS=0
                   MONTHS=$(jq -r '.months | keys | .[]' "$file")
                   for month in $MONTHS; do
@@ -81,7 +64,6 @@ METADATA_START
                     TOTAL_EVENTS=$((TOTAL_EVENTS + EVENT_COUNT))
                   done
                   
-                  # Count total events (all events across all days)
                   TOTAL_EVENT_ITEMS=0
                   for month in $MONTHS; do
                     DAYS=$(jq -r ".months[\"$month\"].events.days | length" "$file")
@@ -91,7 +73,6 @@ METADATA_START
                     done
                   done
                   
-                  # Create class group object
                   CLASS_GROUP_OBJ=$(jq -n \
                     --arg cg "$CLASS_GROUP" \
                     --arg fn "$FILENAME" \
@@ -114,12 +95,10 @@ METADATA_START
                       totalEvents: $tei
                     }')
                   
-                  # Add to class groups array
                   CLASS_GROUPS_JSON=$(echo "$CLASS_GROUPS_JSON" | jq --argjson obj "$CLASS_GROUP_OBJ" '. += [$obj]')
                 fi
               done
               
-              # Create semester object
               SEMESTER_OBJ=$(jq -n \
                 --arg sn "$SEMESTER_NAME" \
                 --arg sfn "$SEMESTER_FULL_NAME" \
@@ -132,12 +111,10 @@ METADATA_START
                   classGroups: $cg
                 }')
               
-              # Add to semesters array
               SEMESTERS_JSON=$(echo "$SEMESTERS_JSON" | jq --argjson obj "$SEMESTER_OBJ" '. += [$obj]')
             fi
           done
           
-          # Create final metadata
           CURRENT_TIME=$(date -u +"%B %d, %Y at %I:%M:%S %p")
           CURRENT_TIME_ISO=$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")
           
@@ -156,222 +133,17 @@ METADATA_START
             }' > metadata.json
           
           echo "Metadata generated successfully"
-          cat metadata.json
           
-      - name: Generate README
-        run: |
-          cat > README.md << 'EOF'
-# VIT Academic Calendar
-
-Community-maintained academic calendar data for VIT (Vellore Institute of Technology), automatically extracted from VTOP.
-
-## Quick Access
-
-- [metadata.json](metadata.json) - Complete calendar metadata with all details
-- [Browse Calendars](calendars/) - All calendar files organized by semester
-
-## Repository Structure
-
-```
-calendars/
-├── Winter_Semester_2025-26_-_CHN/
-├── Fall_Semester_2025-26_-_CHN/
-└── Summer_Semester_2024-25_-_CHN/
-```
-
-## Available Calendars
-
-EOF
-          
-          # Find all calendar files and organize by semester
-          for semester_dir in calendars/*/; do
-            if [ -d "$semester_dir" ]; then
-              SEMESTER_NAME=$(basename "$semester_dir")
-              
-              # Get semester full name from first file
-              FIRST_FILE=$(find "$semester_dir" -name "*.json" -type f | head -n 1)
-              if [ -n "$FIRST_FILE" ]; then
-                SEMESTER_FULL_NAME=$(jq -r '.semester' "$FIRST_FILE")
-              else
-                SEMESTER_FULL_NAME="$SEMESTER_NAME"
-              fi
-              
-              echo "### $SEMESTER_FULL_NAME" >> README.md
-              echo "" >> README.md
-              
-              # List all files in this semester
-              for file in "$semester_dir"*.json; do
-                if [ -f "$file" ]; then
-                  FILENAME=$(basename "$file")
-                  CLASS_GROUP=$(jq -r '.classGroup' "$file")
-                  LAST_UPDATED=$(jq -r '.lastUpdated' "$file")
-                  MONTH_COUNT=$(jq -r '.months | keys | length' "$file")
-                  
-                  # Count total event days
-                  TOTAL_EVENTS=0
-                  MONTHS=$(jq -r '.months | keys | .[]' "$file")
-                  for month in $MONTHS; do
-                    EVENT_COUNT=$(jq -r ".months[\"$month\"].events.days | length" "$file")
-                    TOTAL_EVENTS=$((TOTAL_EVENTS + EVENT_COUNT))
-                  done
-                  
-                  echo "#### $CLASS_GROUP" >> README.md
-                  echo "" >> README.md
-                  echo "- File: \`$FILENAME\`" >> README.md
-                  echo "- Last Updated: $LAST_UPDATED" >> README.md
-                  echo "- Months: $MONTH_COUNT" >> README.md
-                  echo "- Event Days: $TOTAL_EVENTS" >> README.md
-                  echo "- [Download JSON]($file)" >> README.md
-                  echo "" >> README.md
-                fi
-              done
-            fi
-          done
-          
-          cat >> README.md << 'EOF'
-
-## Metadata API
-
-Access complete calendar metadata programmatically:
-
-```
-https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/metadata.json
-```
-
-### Metadata Structure
-
-```json
-{
-  "lastUpdated": "December 7, 2025 at 10:10:34 AM",
-  "lastUpdatedISO": "2025-12-07T04:40:34.000Z",
-  "totalSemesters": 3,
-  "totalCalendars": 5,
-  "semesters": [
-    {
-      "semesterFolder": "Winter_Semester_2025-26_-_CHN",
-      "semesterName": "Winter Semester 2025-26 - CHN",
-      "classGroupCount": 2,
-      "classGroups": [
-        {
-          "classGroup": "General (Semester)",
-          "fileName": "Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
-          "filePath": "calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
-          "lastUpdated": "December 7, 2025 at 10:10:34 AM",
-          "lastUpdatedISO": "2025-12-07T04:40:34.625Z",
-          "monthCount": 5,
-          "months": "DEC-2025, JAN-2026, FEB-2026, MAR-2026, APR-2026",
-          "totalEventDays": 89,
-          "totalEvents": 95
-        }
-      ]
-    }
-  ]
-}
-```
-
-## JSON File Format
-
-Each calendar file contains:
-
-```json
-{
-  "lastUpdated": "December 7, 2025 at 10:10:34 AM",
-  "lastUpdatedISO": "2025-12-07T04:40:34.625Z",
-  "semester": "Winter Semester 2025-26 - CHN",
-  "classGroup": "General (Semester)",
-  "months": {
-    "DEC-2025": {
-      "date": "01-DEC-2025",
-      "events": {
-        "days": [
-          {
-            "date": 4,
-            "events": [
-              {
-                "text": "Instructional Day",
-                "category": "General",
-                "description": "FID/ Working Day / Add & Drop"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  }
-}
-```
-
-## How to Contribute
-
-1. Install the VTOP Calendar Extension
-2. Extract calendar data from VTOP
-3. Click "GitHub PR" to create a pull request
-4. Wait for automated analysis
-5. Repository maintainer will review and merge
-
-## Using the Data
-
-### JavaScript Example
-
-```javascript
-// Fetch metadata
-const metaResponse = await fetch('https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/metadata.json');
-const metadata = await metaResponse.json();
-
-// Get all available calendars
-metadata.semesters.forEach(semester => {
-  console.log(`Semester: ${semester.semesterName}`);
-  semester.classGroups.forEach(cg => {
-    console.log(`  - ${cg.classGroup}: ${cg.totalEvents} events`);
-  });
-});
-
-// Fetch specific calendar
-const calendarUrl = 'https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/' + 
-                    metadata.semesters[0].classGroups[0].filePath;
-const calendar = await fetch(calendarUrl).then(r => r.json());
-```
-
-### Python Example
-
-```python
-import requests
-
-# Fetch metadata
-meta_url = 'https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/metadata.json'
-metadata = requests.get(meta_url).json()
-
-# List all calendars
-for semester in metadata['semesters']:
-    print(f"Semester: {semester['semesterName']}")
-    for cg in semester['classGroups']:
-        print(f"  - {cg['classGroup']}: {cg['totalEvents']} events")
-
-# Fetch specific calendar
-calendar_url = 'https://raw.githubusercontent.com/divyanshupatel17/vit-academic-calendar/main/' + \
-               metadata['semesters'][0]['classGroups'][0]['filePath']
-calendar = requests.get(calendar_url).json()
-```
-
-## License
-
-This data is extracted from VTOP and is intended for educational purposes only.
-
-## Last Updated
-
-This README was automatically generated on $(date -u +"%Y-%m-%d %H:%M:%S UTC")
-EOF
-          
-      - name: Commit and push changes
+      - name: Commit and push metadata
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add metadata.json README.md
+          git add metadata.json
           
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes to metadata.json"
           else
-            git commit -m "Update README and metadata [skip ci]"
+            git commit -m "Update metadata.json [skip ci]"
             git push
           fi
