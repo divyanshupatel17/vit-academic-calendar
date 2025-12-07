@@ -1,0 +1,106 @@
+{
+  "lastUpdated": "December 07, 2025 at 04:09:49 PM",
+  "lastUpdatedISO": "2025-12-07T16:09:49.000Z",
+  "totalSemesters": 3,
+  "totalCalendars": 7,
+  "semesters": [
+    {
+      "semesterFolder": "Fall_Semester_Industry_2025-26_-_CHN",
+      "semesterName": "Fall Semester (Industry) 2025-26 - CHN",
+      "classGroupCount": 1,
+      "classGroups": [
+        {
+          "classGroup": "All Class Group (Combined)",
+          "fileName": "Fall_Semester_Industry_2025-26_-_CHN_All_Class_Group_Combined__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
+          "filePath": "calendars/Fall_Semester_Industry_2025-26_-_CHN/Fall_Semester_Industry_2025-26_-_CHN_All_Class_Group_Combined__SEP_OCT_NOV_DEC_JAN_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:31:10 PM",
+          "lastUpdatedISO": "2025-12-07T16:01:10.674Z",
+          "monthCount": 5,
+          "months": "DEC-2025, JAN-2026, NOV-2025, OCT-2025, SEP-2025",
+          "totalEventDays": 85,
+          "totalEvents": 85
+        }
+      ]
+    },
+    {
+      "semesterFolder": "Winter_Semester_2025-26_-_CHN",
+      "semesterName": "Winter Semester 2025-26 - CHN",
+      "classGroupCount": 4,
+      "classGroups": [
+        {
+          "classGroup": "All Class Group (Combined)",
+          "fileName": "Winter_Semester_2025-26_-_CHN_All_Class_Group_Combined__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_All_Class_Group_Combined__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:09:00 PM",
+          "lastUpdatedISO": "2025-12-07T15:39:00.523Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 123,
+          "totalEvents": 357
+        },
+        {
+          "classGroup": "General (Flexible)",
+          "fileName": "Winter_Semester_2025-26_-_CHN_General_Flexible__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_Flexible__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:09:00 PM",
+          "lastUpdatedISO": "2025-12-07T15:39:00.523Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 119,
+          "totalEvents": 119
+        },
+        {
+          "classGroup": "General (LAW)",
+          "fileName": "Winter_Semester_2025-26_-_CHN_General_LAW__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_LAW__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:09:00 PM",
+          "lastUpdatedISO": "2025-12-07T15:39:00.523Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 120,
+          "totalEvents": 120
+        },
+        {
+          "classGroup": "General (Semester)",
+          "fileName": "Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_2025-26_-_CHN/Winter_Semester_2025-26_-_CHN_General_Semester__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:09:00 PM",
+          "lastUpdatedISO": "2025-12-07T15:39:00.523Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 118,
+          "totalEvents": 118
+        }
+      ]
+    },
+    {
+      "semesterFolder": "Winter_Semester_LLM_2025-26_-_CHN",
+      "semesterName": "Winter Semester LLM 2025-26 - CHN",
+      "classGroupCount": 2,
+      "classGroups": [
+        {
+          "classGroup": "All Class Group (Combined)",
+          "fileName": "Winter_Semester_LLM_2025-26_-_CHN_All_Class_Group_Combined__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_LLM_2025-26_-_CHN/Winter_Semester_LLM_2025-26_-_CHN_All_Class_Group_Combined__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:18:03 PM",
+          "lastUpdatedISO": "2025-12-07T15:48:03.907Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 120,
+          "totalEvents": 120
+        },
+        {
+          "classGroup": "General (Flexible)",
+          "fileName": "Winter_Semester_LLM_2025-26_-_CHN_General_Flexible__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "filePath": "calendars/Winter_Semester_LLM_2025-26_-_CHN/Winter_Semester_LLM_2025-26_-_CHN_General_Flexible__DEC_JAN_FEB_MAR_APR_UpdatedDec7.json",
+          "lastUpdated": "December 7, 2025 at 09:18:03 PM",
+          "lastUpdatedISO": "2025-12-07T15:48:03.907Z",
+          "monthCount": 5,
+          "months": "APR-2026, DEC-2025, FEB-2026, JAN-2026, MAR-2026",
+          "totalEventDays": 120,
+          "totalEvents": 120
+        }
+      ]
+    }
+  ]
+}
