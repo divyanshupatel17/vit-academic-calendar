@@ -1,5 +1,6 @@
 # GitHub Actions Workflow for Auto-Reviewing and Merging Calendar PRs
-# File Location: .github/workflows/auto-merge-calendar.yml
+# Place this file in: .github/workflows/auto-merge-calendar.yml
+
 name: Auto Review and Merge Calendar PRs
 
 on:
@@ -9,111 +10,351 @@ on:
       - 'calendars/**/*.json'
 
 jobs:
-  validate-and-merge:
+  validate-and-process:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-
+      
     steps:
-      - name: Checkout code
+      - name: Step 1 - Checkout code
         uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.sha }}
-
-      - name: Get changed files
+          fetch-depth: 0
+          
+      - name: Step 2 - Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v40
         with:
           files: |
             calendars/**/*.json
-
-      - name: Validate JSON files
+            
+      - name: Step 3 - Validate JSON structure and format
         id: validate
         run: |
-          echo "Validating JSON files..."
+          echo "Step 3: Validating JSON files..."
           VALID=true
+          ERROR_MSG=""
           
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "Checking $file"
-
+            
+            # Check if file exists
             if [ ! -f "$file" ]; then
               echo "Error: File $file not found"
+              ERROR_MSG="${ERROR_MSG}\n- File not found: $file"
               VALID=false
               continue
             fi
-
+            
+            # Validate JSON syntax
             if ! jq empty "$file" 2>/dev/null; then
-              echo "Error: Invalid JSON in $file"
+              echo "Error: Invalid JSON syntax in $file"
+              ERROR_MSG="${ERROR_MSG}\n- Invalid JSON syntax: $file"
               VALID=false
               continue
             fi
-
+            
+            # Check required fields in correct order
+            EXPECTED_ORDER="lastUpdated lastUpdatedISO semester classGroup months"
+            ACTUAL_ORDER=$(jq -r 'keys | join(" ")' "$file")
+            
+            if [ "$ACTUAL_ORDER" != "$EXPECTED_ORDER" ]; then
+              echo "Error: Incorrect field order in $file"
+              echo "Expected: $EXPECTED_ORDER"
+              echo "Got: $ACTUAL_ORDER"
+              ERROR_MSG="${ERROR_MSG}\n- Incorrect field order: $file (Expected: lastUpdated, lastUpdatedISO, semester, classGroup, months)"
+              VALID=false
+              continue
+            fi
+            
+            # Check if all required fields exist
             if ! jq -e '.lastUpdated and .lastUpdatedISO and .semester and .classGroup and .months' "$file" > /dev/null; then
-              echo "Error: Missing fields in $file"
+              echo "Error: Missing required fields in $file"
+              ERROR_MSG="${ERROR_MSG}\n- Missing required fields: $file"
               VALID=false
               continue
             fi
-
-            echo "✓ $file is valid"
+            
+            # Check if months are in correct order (chronological)
+            MONTHS=$(jq -r '.months | keys | .[]' "$file")
+            SORTED_MONTHS=$(echo "$MONTHS" | sort -t- -k2 -k1M)
+            
+            if [ "$MONTHS" != "$SORTED_MONTHS" ]; then
+              echo "Warning: Months not in chronological order in $file"
+              ERROR_MSG="${ERROR_MSG}\n- Months not in chronological order: $file"
+              VALID=false
+            fi
+            
+            echo "File $file passed validation"
           done
-
-          echo "valid=$VALID" >> $GITHUB_OUTPUT
-          if [ "$VALID" = false ]; then exit 1; fi
-
-      - name: Check for updates
-        id: check-updates
+          
+          if [ "$VALID" = true ]; then
+            echo "valid=true" >> $GITHUB_OUTPUT
+            echo "error_msg=" >> $GITHUB_OUTPUT
+            echo "Step 3: All files are valid"
+          else
+            echo "valid=false" >> $GITHUB_OUTPUT
+            echo "error_msg<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$ERROR_MSG" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "Step 3: Validation failed"
+          fi
+          
+      - name: Step 4 - Add syntax error label and comment
+        if: steps.validate.outputs.valid == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['needs-review', 'syntax-error']
+            });
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '**Step 4: Validation Failed - Syntax Errors Detected**\n\n' +
+                    'The following issues were found:\n' +
+                    '${{ steps.validate.outputs.error_msg }}\n\n' +
+                    '**Required JSON Structure:**\n' +
+                    '```json\n' +
+                    '{\n' +
+                    '  "lastUpdated": "December 7, 2025 at 10:10:34 AM",\n' +
+                    '  "lastUpdatedISO": "2025-12-07T04:40:34.625Z",\n' +
+                    '  "semester": "Winter Semester 2025-26 - CHN",\n' +
+                    '  "classGroup": "General (Semester)",\n' +
+                    '  "months": { ... }\n' +
+                    '}\n' +
+                    '```\n\n' +
+                    '**Action Required:** Please fix the errors and update the PR.\n' +
+                    '**Status:** PR is on hold for manual review.'
+            });
+            
+            // Exit without failing the workflow
+            process.exit(0);
+            
+      - name: Step 5 - Compare with existing files
+        if: steps.validate.outputs.valid == 'true'
+        id: compare
         run: |
-          HAS_UPDATES=false
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            if git show origin/main:$file > /dev/null 2>&1; then
-              NEW=$(jq 'del(.lastUpdated,.lastUpdatedISO)' "$file")
-              OLD=$(git show origin/main:$file | jq 'del(.lastUpdated,.lastUpdatedISO)')
-              if [ "$NEW" != "$OLD" ]; then HAS_UPDATES=true; fi
-            else
-              HAS_UPDATES=true
+          echo "Step 5: Comparing with existing files..."
+          
+          # Extract semester and classGroup from the first changed file
+          FIRST_FILE="${{ steps.changed-files.outputs.all_changed_files }}"
+          FIRST_FILE=$(echo "$FIRST_FILE" | head -n1)
+          
+          SEMESTER=$(jq -r '.semester' "$FIRST_FILE" | sed 's/[^a-zA-Z0-9_-]/_/g' | sed 's/__*/_/g')
+          CLASS_GROUP=$(jq -r '.classGroup' "$FIRST_FILE" | sed 's/[^a-zA-Z0-9_-]/_/g' | sed 's/__*/_/g')
+          
+          echo "Semester: $SEMESTER"
+          echo "Class Group: $CLASS_GROUP"
+          
+          # Find existing file with same semester and class group (ignore month names in filename)
+          EXISTING_FILE=""
+          for existing in calendars/$SEMESTER/*.json; do
+            if [ -f "$existing" ]; then
+              EXISTING_SEMESTER=$(jq -r '.semester' "$existing" 2>/dev/null || echo "")
+              EXISTING_CLASS=$(jq -r '.classGroup' "$existing" 2>/dev/null || echo "")
+              
+              if [ "$EXISTING_SEMESTER" = "$(jq -r '.semester' "$FIRST_FILE")" ] && \
+                 [ "$EXISTING_CLASS" = "$(jq -r '.classGroup' "$FIRST_FILE")" ]; then
+                EXISTING_FILE="$existing"
+                break
+              fi
             fi
           done
-          echo "has_updates=$HAS_UPDATES" >> $GITHUB_OUTPUT
-
-      - name: Auto-merge PR
-        if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'true'
+          
+          if [ -z "$EXISTING_FILE" ]; then
+            echo "is_new=true" >> $GITHUB_OUTPUT
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "changes_summary=New calendar file" >> $GITHUB_OUTPUT
+            echo "Step 5: This is a new calendar file"
+          else
+            echo "is_new=false" >> $GITHUB_OUTPUT
+            echo "existing_file=$EXISTING_FILE" >> $GITHUB_OUTPUT
+            
+            # Compare content (excluding timestamps)
+            NEW_CONTENT=$(jq 'del(.lastUpdated, .lastUpdatedISO)' "$FIRST_FILE")
+            OLD_CONTENT=$(jq 'del(.lastUpdated, .lastUpdatedISO)' "$EXISTING_FILE")
+            
+            if [ "$NEW_CONTENT" = "$OLD_CONTENT" ]; then
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+              echo "changes_summary=No changes detected" >> $GITHUB_OUTPUT
+              echo "Step 5: No actual changes detected"
+            else
+              echo "has_changes=true" >> $GITHUB_OUTPUT
+              
+              # Calculate detailed changes
+              OLD_MONTHS=$(jq -r '.months | keys | .[]' "$EXISTING_FILE" | sort)
+              NEW_MONTHS=$(jq -r '.months | keys | .[]' "$FIRST_FILE" | sort)
+              
+              ADDED_MONTHS=$(comm -13 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS") | tr '\n' ',' | sed 's/,$//')
+              REMOVED_MONTHS=$(comm -23 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS") | tr '\n' ',' | sed 's/,$//')
+              COMMON_MONTHS=$(comm -12 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS"))
+              
+              CHANGES=""
+              [ -n "$ADDED_MONTHS" ] && CHANGES="${CHANGES}Added months: $ADDED_MONTHS\n"
+              [ -n "$REMOVED_MONTHS" ] && CHANGES="${CHANGES}Removed months: $REMOVED_MONTHS\n"
+              
+              # Check for event changes in common months
+              MODIFIED_COUNT=0
+              for month in $COMMON_MONTHS; do
+                OLD_MONTH=$(jq ".months[\"$month\"]" "$EXISTING_FILE")
+                NEW_MONTH=$(jq ".months[\"$month\"]" "$FIRST_FILE")
+                if [ "$OLD_MONTH" != "$NEW_MONTH" ]; then
+                  MODIFIED_COUNT=$((MODIFIED_COUNT + 1))
+                fi
+              done
+              
+              [ $MODIFIED_COUNT -gt 0 ] && CHANGES="${CHANGES}Modified $MODIFIED_COUNT existing month(s)\n"
+              
+              echo "changes_summary<<EOF" >> $GITHUB_OUTPUT
+              echo -e "$CHANGES" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+              
+              echo "Step 5: Changes detected"
+            fi
+          fi
+          
+      - name: Step 6 - Add no-changes label and close PR
+        if: steps.validate.outputs.valid == 'true' && steps.compare.outputs.has_changes == 'false'
         uses: actions/github-script@v7
         with:
           script: |
-            await github.rest.pulls.merge({
+            await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: context.issue.number,
-              merge_method: 'squash'
-            })
-
-      - name: Comment after merge
-        if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              labels: ['no-changes', 'duplicate']
+            });
+            
+            await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '🎉 Auto-merged successfully!'
-            })
-
-      - name: Close PR with comment (no actual changes)
-        if: steps.validate.outputs.valid == 'true' && steps.check-updates.outputs.has_updates == 'false'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '⚠️ Identical to main (only timestamps changed) — closing PR.'
-            })
+              body: '**Step 6: No Changes Detected**\n\n' +
+                    'The calendar data is identical to the existing version.\n' +
+                    'Only timestamps differ, which is expected.\n\n' +
+                    '**Comparison:**\n' +
+                    '- Semester: Same\n' +
+                    '- Class Group: Same\n' +
+                    '- Months: Same\n' +
+                    '- Events: Same\n\n' +
+                    '**Action:** Closing PR automatically.'
+            });
+            
             await github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
               state: 'closed'
-            })
+            });
+            
+      - name: Step 7 - Add changes comment and approve
+        if: steps.validate.outputs.valid == 'true' && steps.compare.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isNew = '${{ steps.compare.outputs.is_new }}' === 'true';
+            const changes = `${{ steps.compare.outputs.changes_summary }}`;
+            
+            let commentBody = '**Step 7: Validation Passed**\n\n';
+            
+            if (isNew) {
+              commentBody += '**Type:** New Calendar File\n\n';
+              commentBody += '**Details:**\n';
+              commentBody += '- This is a new calendar that will be added to the repository\n';
+            } else {
+              commentBody += '**Type:** Calendar Update\n\n';
+              commentBody += '**Changes Detected:**\n';
+              commentBody += changes.split('\n').map(line => line ? `- ${line}` : '').join('\n');
+            }
+            
+            commentBody += '\n\n**Validation Results:**\n';
+            commentBody += '- JSON syntax: Valid\n';
+            commentBody += '- Required fields: Present\n';
+            commentBody += '- Field order: Correct\n';
+            commentBody += '- Month order: Chronological\n';
+            commentBody += '\n**Status:** Approved for merge';
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: commentBody
+            });
+            
+            // Add appropriate label
+            const label = isNew ? 'new-calendar' : 'calendar-update';
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: [label, 'auto-approved']
+            });
+            
+      - name: Step 8 - Auto-approve PR
+        if: steps.validate.outputs.valid == 'true' && steps.compare.outputs.has_changes == 'true'
+        uses: hmarr/auto-approve-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+            
+      - name: Step 9 - Merge PR
+        if: steps.validate.outputs.valid == 'true' && steps.compare.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isNew = '${{ steps.compare.outputs.is_new }}' === 'true';
+            const prTitle = context.payload.pull_request.title;
+            
+            let commitTitle, commitMessage;
+            
+            if (isNew) {
+              commitTitle = `Add new calendar: ${prTitle}`;
+              commitMessage = `New calendar file added\n\nPR: #${context.issue.number}\nType: New Calendar\nAuto-merged after validation`;
+            } else {
+              const changes = `${{ steps.compare.outputs.changes_summary }}`;
+              commitTitle = `Update calendar: ${prTitle}`;
+              commitMessage = `Calendar updated\n\nPR: #${context.issue.number}\nType: Update\nChanges:\n${changes}\n\nAuto-merged after validation`;
+            }
+            
+            try {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.issue.number,
+                merge_method: 'squash',
+                commit_title: commitTitle,
+                commit_message: commitMessage
+              });
+              
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: '**Step 9: Merged Successfully**\n\n' +
+                      'Calendar has been updated and merged into main branch.\n\n' +
+                      'Thank you for contributing to the VIT Academic Calendar!'
+              });
+            } catch (error) {
+              await github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: '**Step 9: Merge Failed**\n\n' +
+                      `Error: ${error.message}\n\n` +
+                      'Please merge manually or contact the repository maintainer.'
+              });
+              
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['merge-conflict', 'needs-review']
+              });
+            }
