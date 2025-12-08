@@ -1,0 +1,4463 @@
+{
+  "lastUpdated": "December 8, 2025 at 01:17:17 PM",
+  "lastUpdatedISO": "2025-12-08T07:47:17.536Z",
+  "semester": "Fall Semester 2025-26 - CHN",
+  "classGroup": "All Class Group (Combined)",
+  "months": {
+    "JUL-2025": {
+      "date": "01-JUL-2025",
+      "events": {
+        "days": [
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ Add or Drop",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "FID/ Working Day/ Add or Drop",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "FID/ Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "FID/ Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "FID/ Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FID/ FIW - 01",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FIW - 02",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          }
+        ],
+        "month": "JULY 2025"
+      }
+    },
+    "AUG-2025": {
+      "date": "01-AUG-2025",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Instructional Day/ Tuesday Day Order",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FIW - 03",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Instructional Day/ Friday Day Orde",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Instructional Day/ Friday Day Order",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 04",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Independence Day",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Independence Day",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Independence Day",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Independence",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Independence Day",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Independence Day",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Independence Day",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day/ Thursday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day/ Thursday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Freshers)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - I",
+                "text": "CAT - I - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Vinayakar Chathurthi",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 05",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 06",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          }
+        ],
+        "month": "AUGUST 2025"
+      }
+    },
+    "SEP-2025": {
+      "date": "01-SEP-2025",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Meelad-un-Nabi/ Onam",
+                "text": "No Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 07",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ Course Withdraw",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Instructional Day / Monday Day Order",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day / Monday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Semester",
+                "description": "FIW - 08",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Instructional Day/ Thursday Day Order",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day/ Thursday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Semester",
+                "description": "FWI - 09",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 10",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 11",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 12",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          }
+        ],
+        "month": "SEPTEMBER 2025"
+      }
+    },
+    "OCT-2025": {
+      "date": "01-OCT-2025",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Ayudha Pooja",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Gandhi Jayanthi",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day/ Wednesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Instructional Day/ Wednesday Day Order",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Freshers)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "CAT - II",
+                "text": "CAT - II - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Deepavali Holidays",
+                "text": "Holiday - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Research)"
+              }
+            ]
+          }
+        ],
+        "month": "OCTOBER 2025"
+      }
+    },
+    "NOV-2025": {
+      "date": "01-NOV-2025",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "TechnoVIT",
+                "text": "No Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LID for Lab Class",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LID for Lab Class",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day / LID for Lab Class",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day / LID for Lab Class",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "",
+                "text": "No Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "",
+                "text": "No Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Semester",
+                "description": "",
+                "text": "No Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 13",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day/ LAB FAT/ LID for Theory classes",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day/ LAB FAT/ LID for Theory classes",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LID for Lab Classes",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Flexible Freshers",
+                "description": "Working Day/ LAB FAT/ LID for Theory Classes",
+                "text": "Instructional Day - General (Flexible Freshers)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              },
+              {
+                "category": "Flexible Research",
+                "description": "Working Day/ LAB FAT/ LID for Theory classes",
+                "text": "Instructional Day - General (Flexible Research)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FWI - 14/ LID",
+                "text": "Instructional Day - Weekend Intra (Semester)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day/ LID",
+                "text": "Instructional Day - General (LAW)"
+              },
+              {
+                "category": "Cohort LAW",
+                "description": "LID / Working Day",
+                "text": "Instructional Day - General (Cohort LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LAB FAT",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Freshers B.Tech",
+                "description": "Working Day/ LAB FAT/ LID for Theory Classes",
+                "text": "Instructional Day - General (Freshers B.Tech)"
+              }
+            ]
+          }
+        ],
+        "month": "NOVEMBER 2025"
+      }
+    }
+  }
+}
