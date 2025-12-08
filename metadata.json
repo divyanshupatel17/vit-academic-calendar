@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "December 08, 2025 at 07:54:55 AM",
-  "lastUpdatedISO": "2025-12-08T07:54:55.000Z",
-  "totalSemesters": 3,
-  "totalCalendars": 8,
+  "lastUpdated": "December 08, 2025 at 07:57:54 AM",
+  "lastUpdatedISO": "2025-12-08T07:57:54.000Z",
+  "totalSemesters": 4,
+  "totalCalendars": 9,
   "semesters": [
     {
       "semesterFolder": "Fall_Semester_Industry_2025-26_-_CHN",
@@ -30,6 +30,24 @@
           "months": "DEC-2025, JAN-2026, NOV-2025, OCT-2025, SEP-2025",
           "totalEventDays": 85,
           "totalEvents": 85
+        }
+      ]
+    },
+    {
+      "semesterFolder": "Summer_Semester_2024-25_-_CHN",
+      "semesterName": "Summer Semester 2024-25 - CHN",
+      "classGroupCount": 1,
+      "classGroups": [
+        {
+          "classGroup": "All Class Group (Combined)",
+          "fileName": "Summer_Semester_2024-25_-_CHN_All_Class_Group_Combined__MAY_JUN_UpdatedDec8.json",
+          "filePath": "calendars/Summer_Semester_2024-25_-_CHN/Summer_Semester_2024-25_-_CHN_All_Class_Group_Combined__MAY_JUN_UpdatedDec8.json",
+          "lastUpdated": "December 8, 2025 at 01:23:27 PM",
+          "lastUpdatedISO": "2025-12-08T07:53:27.888Z",
+          "monthCount": 2,
+          "months": "JUN-2025, MAY-2025",
+          "totalEventDays": 37,
+          "totalEvents": 37
         }
       ]
     },
