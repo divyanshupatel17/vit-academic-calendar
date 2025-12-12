@@ -1,27 +1,9 @@
 {
-  "lastUpdated": "December 12, 2025 at 06:05:33 AM",
-  "lastUpdatedISO": "2025-12-12T06:05:33.000Z",
-  "totalSemesters": 3,
-  "totalCalendars": 7,
+  "lastUpdated": "December 12, 2025 at 06:14:29 AM",
+  "lastUpdatedISO": "2025-12-12T06:14:29.000Z",
+  "totalSemesters": 2,
+  "totalCalendars": 6,
   "semesters": [
-    {
-      "semesterFolder": "Summer_Semester_2024-25_-_CHN",
-      "semesterName": "Summer Semester 2024-25 - CHN",
-      "classGroupCount": 1,
-      "classGroups": [
-        {
-          "classGroup": "All Class Group (Combined)",
-          "fileName": "Summer_Semester_2024-25_-_CHN_All_Class_Group_Combined__MAY_JUN_UpdatedDec8.json",
-          "filePath": "calendars/Summer_Semester_2024-25_-_CHN/Summer_Semester_2024-25_-_CHN_All_Class_Group_Combined__MAY_JUN_UpdatedDec8.json",
-          "lastUpdated": "December 8, 2025 at 01:23:27 PM",
-          "lastUpdatedISO": "2025-12-08T07:53:27.888Z",
-          "monthCount": 2,
-          "months": "JUN-2025, MAY-2025",
-          "totalEventDays": 37,
-          "totalEvents": 37
-        }
-      ]
-    },
     {
       "semesterFolder": "Winter_Semester_2025-26_-_CHN",
       "semesterName": "Winter Semester 2025-26 - CHN",
