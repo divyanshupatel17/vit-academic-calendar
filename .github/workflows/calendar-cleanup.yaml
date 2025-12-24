@@ -1,0 +1,55 @@
+name: Cleanup Old Calendar Files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'calendars/**/*.json'
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Remove outdated calendars
+        run: |
+          declare -A latest
+
+          for file in calendars/**/*.json; do
+            SEM=$(jq -r '.semester' "$file")
+            CLS=$(jq -r '.classGroup' "$file")
+            KEY="$SEM|$CLS"
+            DATE=$(jq -r '.lastUpdatedISO' "$file")
+
+            if [ -z "${latest[$KEY]}" ] || [[ "$DATE" > "${latest[$KEY]}" ]]; then
+              latest[$KEY]="$DATE"
+            fi
+          done
+
+          for file in calendars/**/*.json; do
+            SEM=$(jq -r '.semester' "$file")
+            CLS=$(jq -r '.classGroup' "$file")
+            DATE=$(jq -r '.lastUpdatedISO' "$file")
+            KEY="$SEM|$CLS"
+
+            if [ "$DATE" != "${latest[$KEY]}" ]; then
+              git rm "$file"
+            fi
+          done
+
+          if git diff --cached --quiet; then
+            echo "No old calendars to remove"
+            exit 0
+          fi
+
+          git config user.name "calendar-bot"
+          git config user.email "calendar-bot@users.noreply.github.com"
+          git commit -m "Cleanup outdated calendar files"
+          git push

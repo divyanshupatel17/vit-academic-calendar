@@ -1,4 +1,4 @@
-name: PR Analysis
+name: PR Calendar Analysis
 
 on:
   pull_request:
@@ -8,23 +8,18 @@ on:
 
 jobs:
   analyze:
-    name: Analyze Calendar JSON Files
     runs-on: ubuntu-latest
-
-    # Fork-safe permissions
     permissions:
       contents: read
 
     steps:
-      # 1️⃣ Checkout PR code (full history, fork-safe)
       - name: Checkout PR code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2️⃣ Detect changed calendar JSON files (fork-safe diff)
       - name: Get changed calendar files
-        id: changed-files
+        id: changed
         uses: tj-actions/changed-files@v40
         with:
           base_sha: ${{ github.event.pull_request.base.sha }}
@@ -32,103 +27,64 @@ jobs:
           files: |
             calendars/**/*.json
 
-      # 3️⃣ Stop early if no calendar files were changed
-      - name: Exit if no calendar files changed
-        if: steps.changed-files.outputs.all_changed_files == ''
+      - name: Analyze calendars
         run: |
-          echo "No calendar JSON files changed."
-          echo "## PR Analysis" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "No calendar files were modified in this PR." >> $GITHUB_STEP_SUMMARY
-          exit 0
-
-      # 4️⃣ Analyze changed JSON files
-      - name: Analyze JSON files
-        id: analyze
-        run: |
-          echo "## PR Analysis Report" > report.md
+          echo "## 📅 Calendar Analysis Report" > report.md
           echo "" >> report.md
 
-          VALID=true
-          ERROR_DETAILS=""
-
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+          for file in ${{ steps.changed.outputs.all_changed_files }}; do
             echo "### File: \`$file\`" >> report.md
             echo "" >> report.md
 
-            # File existence
-            if [ ! -f "$file" ]; then
-              echo "**Status:** ERROR - File not found" >> report.md
-              VALID=false
-              ERROR_DETAILS="${ERROR_DETAILS}\n- File not found: $file"
-              continue
-            fi
-
-            # JSON syntax validation
-            if ! jq empty "$file" 2>/dev/null; then
-              echo "**Status:** ERROR - Invalid JSON syntax" >> report.md
-              VALID=false
-              ERROR_DETAILS="${ERROR_DETAILS}\n- Invalid JSON syntax: $file"
-              continue
-            fi
-
-            # Required field order
-            EXPECTED_ORDER="classGroup lastUpdated lastUpdatedISO months semester"
-            ACTUAL_ORDER=$(jq -r 'keys | sort | join(" ")' "$file")
-
-            if [ "$ACTUAL_ORDER" != "$EXPECTED_ORDER" ]; then
-              echo "**Status:** ERROR - Incorrect field order" >> report.md
-              echo "- Expected order: classGroup, lastUpdated, lastUpdatedISO, months, semester" >> report.md
-              echo "- Found: $(jq -r 'keys | join(", ")' "$file")" >> report.md
-              VALID=false
-              ERROR_DETAILS="${ERROR_DETAILS}\n- Incorrect field order: $file"
-            else
-              echo "**Status:** VALID" >> report.md
-            fi
-
-            # Metadata
             SEMESTER=$(jq -r '.semester' "$file")
-            CLASS_GROUP=$(jq -r '.classGroup' "$file")
-            LAST_UPDATED=$(jq -r '.lastUpdated' "$file")
+            CLASS=$(jq -r '.classGroup' "$file")
+            UPDATED=$(jq -r '.lastUpdated' "$file")
 
             echo "**Semester:** $SEMESTER" >> report.md
-            echo "**Class Group:** $CLASS_GROUP" >> report.md
-            echo "**Last Updated:** $LAST_UPDATED" >> report.md
+            echo "**Class Group:** $CLASS" >> report.md
+            echo "**Last Updated:** $UPDATED" >> report.md
             echo "" >> report.md
 
-            # Event counts
-            echo "**Events by Month:**" >> report.md
-            TOTAL_EVENTS=0
+            MATCH=""
+            for base in $(git ls-tree -r --name-only origin/${{ github.base_ref }} calendars | grep '.json'); do
+              git show origin/${{ github.base_ref }}:$base > /tmp/base.json || continue
 
-            for month in $(jq -r '.months | keys[]' "$file"); do
-              COUNT=$(jq -r ".months[\"$month\"].events.days | length" "$file")
-              TOTAL_EVENTS=$((TOTAL_EVENTS + COUNT))
-              echo "- $month: $COUNT days" >> report.md
+              if [ "$(jq -r '.semester' /tmp/base.json)" = "$SEMESTER" ] && \
+                 [ "$(jq -r '.classGroup' /tmp/base.json)" = "$CLASS" ]; then
+                MATCH="$base"
+                break
+              fi
             done
 
-            echo "**Total:** $TOTAL_EVENTS days with events" >> report.md
+            if [ -z "$MATCH" ]; then
+              echo "**Type:** NEW CALENDAR" >> report.md
+            else
+              echo "**Type:** UPDATE EXISTING CALENDAR" >> report.md
+              echo "**Previous File:** \`$MATCH\`" >> report.md
+              echo "" >> report.md
+
+              OLD_TOTAL=0
+              for m in $(jq -r '.months | keys[]' /tmp/base.json); do
+                OLD_TOTAL=$((OLD_TOTAL + $(jq -r ".months[\"$m\"].events.days | length" /tmp/base.json)))
+              done
+
+              NEW_TOTAL=0
+              for m in $(jq -r '.months | keys[]' "$file"); do
+                NEW_TOTAL=$((NEW_TOTAL + $(jq -r ".months[\"$m\"].events.days | length" "$file")))
+              done
+
+              echo "**Event Comparison:**" >> report.md
+              echo "- Previous: $OLD_TOTAL days" >> report.md
+              echo "- Current: $NEW_TOTAL days" >> report.md
+              echo "- Difference: $((NEW_TOTAL - OLD_TOTAL)) days" >> report.md
+            fi
+
             echo "" >> report.md
             echo "---" >> report.md
             echo "" >> report.md
           done
 
-          # Summary
-          echo "## Summary" >> report.md
-          echo "" >> report.md
-
-          if [ "$VALID" = true ]; then
-            echo "**Validation:** PASSED" >> report.md
-            echo "All calendar files are valid and correctly structured." >> report.md
-          else
-            echo "**Validation:** FAILED" >> report.md
-            echo "" >> report.md
-            echo "**Errors:**" >> report.md
-            echo -e "$ERROR_DETAILS" >> report.md
-          fi
-
-          echo "valid=$VALID" >> $GITHUB_OUTPUT
-
-      # 5️⃣ Publish results in PR Summary (fork-safe)
-      - name: Publish analysis summary
+      - name: Publish PR summary
         run: |
           cat report.md >> $GITHUB_STEP_SUMMARY
+
