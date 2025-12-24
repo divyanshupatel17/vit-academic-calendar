@@ -8,225 +8,127 @@ on:
 
 jobs:
   analyze:
+    name: Analyze Calendar JSON Files
     runs-on: ubuntu-latest
+
+    # Fork-safe permissions
     permissions:
       contents: read
-      pull-requests: write
-      
+
     steps:
+      # 1️⃣ Checkout PR code (full history, fork-safe)
       - name: Checkout PR code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
-          
-      - name: Checkout base branch
-        run: |
-          git fetch origin ${{ github.base_ref }}
-          
-      - name: Get changed files
+
+      # 2️⃣ Detect changed calendar JSON files (fork-safe diff)
+      - name: Get changed calendar files
         id: changed-files
         uses: tj-actions/changed-files@v40
         with:
+          base_sha: ${{ github.event.pull_request.base.sha }}
+          sha: ${{ github.event.pull_request.head.sha }}
           files: |
             calendars/**/*.json
-            
+
+      # 3️⃣ Stop early if no calendar files were changed
+      - name: Exit if no calendar files changed
+        if: steps.changed-files.outputs.all_changed_files == ''
+        run: |
+          echo "No calendar JSON files changed."
+          echo "## PR Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "No calendar files were modified in this PR." >> $GITHUB_STEP_SUMMARY
+          exit 0
+
+      # 4️⃣ Analyze changed JSON files
       - name: Analyze JSON files
         id: analyze
         run: |
           echo "## PR Analysis Report" > report.md
           echo "" >> report.md
-          
+
           VALID=true
           ERROR_DETAILS=""
-          
+
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "### File: \`$file\`" >> report.md
             echo "" >> report.md
-            
-            # Check if file exists
+
+            # File existence
             if [ ! -f "$file" ]; then
               echo "**Status:** ERROR - File not found" >> report.md
               VALID=false
               ERROR_DETAILS="${ERROR_DETAILS}\n- File not found: $file"
               continue
             fi
-            
-            # Validate JSON syntax
+
+            # JSON syntax validation
             if ! jq empty "$file" 2>/dev/null; then
               echo "**Status:** ERROR - Invalid JSON syntax" >> report.md
               VALID=false
               ERROR_DETAILS="${ERROR_DETAILS}\n- Invalid JSON syntax: $file"
               continue
             fi
-            
-            # Check field order
+
+            # Required field order
             EXPECTED_ORDER="classGroup lastUpdated lastUpdatedISO months semester"
             ACTUAL_ORDER=$(jq -r 'keys | sort | join(" ")' "$file")
-            
+
             if [ "$ACTUAL_ORDER" != "$EXPECTED_ORDER" ]; then
               echo "**Status:** ERROR - Incorrect field order" >> report.md
-              echo "- Expected: lastUpdated, lastUpdatedISO, semester, classGroup, months" >> report.md
-              echo "- Got: $(jq -r 'keys | join(", ")' "$file")" >> report.md
+              echo "- Expected order: classGroup, lastUpdated, lastUpdatedISO, months, semester" >> report.md
+              echo "- Found: $(jq -r 'keys | join(", ")' "$file")" >> report.md
               VALID=false
               ERROR_DETAILS="${ERROR_DETAILS}\n- Incorrect field order: $file"
             else
               echo "**Status:** VALID" >> report.md
             fi
-            
-            # Extract metadata
+
+            # Metadata
             SEMESTER=$(jq -r '.semester' "$file")
             CLASS_GROUP=$(jq -r '.classGroup' "$file")
             LAST_UPDATED=$(jq -r '.lastUpdated' "$file")
-            
+
             echo "**Semester:** $SEMESTER" >> report.md
             echo "**Class Group:** $CLASS_GROUP" >> report.md
             echo "**Last Updated:** $LAST_UPDATED" >> report.md
             echo "" >> report.md
-            
-            # Count events by month
+
+            # Event counts
             echo "**Events by Month:**" >> report.md
-            MONTHS=$(jq -r '.months | keys | .[]' "$file")
             TOTAL_EVENTS=0
-            
-            for month in $MONTHS; do
-              EVENT_COUNT=$(jq -r ".months[\"$month\"].events.days | length" "$file")
-              TOTAL_EVENTS=$((TOTAL_EVENTS + EVENT_COUNT))
-              echo "- $month: $EVENT_COUNT days with events" >> report.md
+
+            for month in $(jq -r '.months | keys[]' "$file"); do
+              COUNT=$(jq -r ".months[\"$month\"].events.days | length" "$file")
+              TOTAL_EVENTS=$((TOTAL_EVENTS + COUNT))
+              echo "- $month: $COUNT days" >> report.md
             done
-            
+
             echo "**Total:** $TOTAL_EVENTS days with events" >> report.md
-            echo "" >> report.md
-            
-            # Check if this is new or update
-            SEMESTER_FOLDER=$(echo "$SEMESTER" | sed 's/[^a-zA-Z0-9_-]/_/g' | sed 's/__*/_/g')
-            EXISTING_FILE=""
-            
-            # Find existing file with same semester and class group
-            if git show origin/${{ github.base_ref }}:calendars/$SEMESTER_FOLDER/ 2>/dev/null | grep -q ".json"; then
-              for existing in $(git ls-tree -r --name-only origin/${{ github.base_ref }} calendars/$SEMESTER_FOLDER/ 2>/dev/null | grep ".json"); do
-                if git show origin/${{ github.base_ref }}:$existing > /tmp/existing.json 2>/dev/null; then
-                  EXISTING_SEMESTER=$(jq -r '.semester' /tmp/existing.json 2>/dev/null || echo "")
-                  EXISTING_CLASS=$(jq -r '.classGroup' /tmp/existing.json 2>/dev/null || echo "")
-                  
-                  if [ "$EXISTING_SEMESTER" = "$SEMESTER" ] && [ "$EXISTING_CLASS" = "$CLASS_GROUP" ]; then
-                    EXISTING_FILE="$existing"
-                    break
-                  fi
-                fi
-              done
-            fi
-            
-            if [ -z "$EXISTING_FILE" ]; then
-              echo "**Type:** NEW CALENDAR" >> report.md
-              echo "This is a new calendar file that will be added to the repository." >> report.md
-            else
-              echo "**Type:** UPDATE EXISTING CALENDAR" >> report.md
-              echo "Existing file: \`$EXISTING_FILE\`" >> report.md
-              echo "" >> report.md
-              
-              # Compare with existing
-              git show origin/${{ github.base_ref }}:$EXISTING_FILE > /tmp/existing.json
-              
-              OLD_MONTHS=$(jq -r '.months | keys | .[]' /tmp/existing.json | sort)
-              NEW_MONTHS=$(jq -r '.months | keys | .[]' "$file" | sort)
-              
-              ADDED_MONTHS=$(comm -13 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS") | tr '\n' ',' | sed 's/,$//')
-              REMOVED_MONTHS=$(comm -23 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS") | tr '\n' ',' | sed 's/,$//')
-              COMMON_MONTHS=$(comm -12 <(echo "$OLD_MONTHS") <(echo "$NEW_MONTHS"))
-              
-              echo "**Changes:**" >> report.md
-              
-              if [ -n "$ADDED_MONTHS" ]; then
-                echo "- Added months: $ADDED_MONTHS" >> report.md
-              fi
-              
-              if [ -n "$REMOVED_MONTHS" ]; then
-                echo "- Removed months: $REMOVED_MONTHS" >> report.md
-              fi
-              
-              # Check for modified months
-              MODIFIED_COUNT=0
-              for month in $COMMON_MONTHS; do
-                OLD_MONTH=$(jq ".months[\"$month\"]" /tmp/existing.json)
-                NEW_MONTH=$(jq ".months[\"$month\"]" "$file")
-                if [ "$OLD_MONTH" != "$NEW_MONTH" ]; then
-                  MODIFIED_COUNT=$((MODIFIED_COUNT + 1))
-                fi
-              done
-              
-              if [ $MODIFIED_COUNT -gt 0 ]; then
-                echo "- Modified: $MODIFIED_COUNT month(s)" >> report.md
-              fi
-              
-              if [ -z "$ADDED_MONTHS" ] && [ -z "$REMOVED_MONTHS" ] && [ $MODIFIED_COUNT -eq 0 ]; then
-                echo "- No changes detected (only timestamp updated)" >> report.md
-              fi
-              
-              # Compare event counts
-              echo "" >> report.md
-              echo "**Event Count Comparison:**" >> report.md
-              
-              OLD_TOTAL=0
-              for month in $OLD_MONTHS; do
-                OLD_COUNT=$(jq -r ".months[\"$month\"].events.days | length" /tmp/existing.json)
-                OLD_TOTAL=$((OLD_TOTAL + OLD_COUNT))
-              done
-              
-              echo "- Existing: $OLD_TOTAL days with events" >> report.md
-              echo "- New: $TOTAL_EVENTS days with events" >> report.md
-              echo "- Difference: $((TOTAL_EVENTS - OLD_TOTAL))" >> report.md
-            fi
-            
             echo "" >> report.md
             echo "---" >> report.md
             echo "" >> report.md
           done
-          
+
           # Summary
           echo "## Summary" >> report.md
           echo "" >> report.md
-          
+
           if [ "$VALID" = true ]; then
             echo "**Validation:** PASSED" >> report.md
-            echo "" >> report.md
-            echo "All files have correct JSON structure and field order." >> report.md
-            echo "Ready for manual review and merge." >> report.md
+            echo "All calendar files are valid and correctly structured." >> report.md
           else
             echo "**Validation:** FAILED" >> report.md
             echo "" >> report.md
-            echo "**Errors found:**" >> report.md
+            echo "**Errors:**" >> report.md
             echo -e "$ERROR_DETAILS" >> report.md
-            echo "" >> report.md
-            echo "Please fix the errors before merging." >> report.md
           fi
-          
+
           echo "valid=$VALID" >> $GITHUB_OUTPUT
-          
-      - name: Post analysis comment
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const fs = require('fs');
-            const report = fs.readFileSync('report.md', 'utf8');
-            
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: report
-            });
-            
-      - name: Add labels
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const valid = '${{ steps.analyze.outputs.valid }}' === 'true';
-            const labels = valid ? ['ready-for-review'] : ['needs-changes', 'validation-failed'];
-            
-            await github.rest.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: labels
-            });
+
+      # 5️⃣ Publish results in PR Summary (fork-safe)
+      - name: Publish analysis summary
+        run: |
+          cat report.md >> $GITHUB_STEP_SUMMARY
