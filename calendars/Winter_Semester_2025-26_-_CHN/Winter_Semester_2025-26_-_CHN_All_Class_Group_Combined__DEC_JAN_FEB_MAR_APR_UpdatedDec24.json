@@ -1,0 +1,2448 @@
+{
+  "lastUpdated": "December 24, 2025 at 08:51:00 PM",
+  "lastUpdatedISO": "2025-12-24T15:21:00.536Z",
+  "semester": "Winter Semester 2025-26 - CHN",
+  "classGroup": "All Class Group (Combined)",
+  "months": {
+    "DEC-2025": {
+      "date": "01-DEC-2025",
+      "events": {
+        "days": [
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "FID/ Working Day / Add & Drop",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "FID/ Working Day / Add & Drop",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "FID/ Working Day / Add & Drop",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / Add & Drop",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / Add & Drop",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day / Add & Drop",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Add & Drop",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Add & Drop",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Add & Drop",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day / Friday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Friday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Friday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          }
+        ],
+        "month": "DECEMBER 2025"
+      }
+    },
+    "JAN-2026": {
+      "date": "01-JAN-2026",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Winter Vacation",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day / Wednesday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Wednesday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Wednesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Pongal Holiday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Monday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Republic Day",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Republic Day",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Republic Day",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 28,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 29,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT I",
+                "text": "CAT - I - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT I",
+                "text": "CAT - I - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Tuesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          }
+        ],
+        "month": "JANUARY 2026"
+      }
+    },
+    "FEB-2026": {
+      "date": "01-FEB-2026",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "ThaiPoosam",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "ThaiPoosam",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "ThaiPoosam",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Thursday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day / Course Withdraw option",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Course Withdraw option / Vibrance 2026",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Course Withdraw option / Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Course Withdraw option / Vibrance 2026",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Vibrance 2026",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          }
+        ],
+        "month": "FEBRUARY 2026"
+      }
+    },
+    "MAR-2026": {
+      "date": "01-MAR-2026",
+      "events": {
+        "days": [
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 4,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Holi",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Holi",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Holi",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 5,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 12,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Wednesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 18,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 19,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Telugu New Year's Day",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Telugu New Year's Day",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Telugu New Year's Day",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Eid-ul-Fitr  Holiday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Eid-ul-Fitr  Holiday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Eid-ul-Fitr  Holiday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "CAT-II",
+                "text": "CAT - II - General (Flexible)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 24,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 25,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 26,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 27,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 30,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 31,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          }
+        ],
+        "month": "MARCH 2026"
+      }
+    },
+    "APR-2026": {
+      "date": "01-APR-2026",
+      "events": {
+        "days": [
+          {
+            "date": 1,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 2,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 3,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Good Friday",
+                "text": "No Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Good Friday",
+                "text": "No Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Good Friday",
+                "text": "No Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 6,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 7,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 8,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 9,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 10,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LID for laboratory classes",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LID for laboratory classes",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 11,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "LAB FAT /Instructional Day / Tuesday Day Order",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "LAB FAT /Instructional Day / Tuesday Day Order",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Instructional Day / Tuesday Day Order",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 13,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 14,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Tamil New Year's Day/Dr. B. R. Ambedhakr Birthday",
+                "text": "Holiday - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Tamil New Year's Day/Dr. B. R. Ambedhakr Birthday",
+                "text": "Holiday - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Tamil New Year's Day/Dr. B. R. Ambedhakr Birthday",
+                "text": "Holiday - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 15,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 16,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LAB FAT",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 17,
+            "events": [
+              {
+                "category": "Semester",
+                "description": "Working Day / LAB FAT / LID for theory classes",
+                "text": "Instructional Day - General (Semester)"
+              },
+              {
+                "category": "Flexible",
+                "description": "Working Day / LAB FAT / LID for theory classes",
+                "text": "Instructional Day - General (Flexible)"
+              },
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 20,
+            "events": [
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 21,
+            "events": [
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 22,
+            "events": [
+              {
+                "category": "LAW",
+                "description": "Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          },
+          {
+            "date": 23,
+            "events": [
+              {
+                "category": "LAW",
+                "description": "Last Instructional Day / Working Day",
+                "text": "Instructional Day - General (LAW)"
+              }
+            ]
+          }
+        ],
+        "month": "APRIL 2026"
+      }
+    }
+  }
+}
